@@ -1,0 +1,5 @@
+*main
+*.vs
+*.vscode
+*tests
+*test-ascii
