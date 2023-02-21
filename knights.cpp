@@ -8,7 +8,11 @@ void printboard(std::string board[][5]){
     */
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            std::cout << " " << board[i][j];
+            if(std::stoi(board[i][j]) > 9){
+                std::cout << board[i][j] << " ";
+            }else{
+                std::cout << " " << board[i][j] << " ";
+            }
         }
         std::cout << "\n";
     }
@@ -43,6 +47,7 @@ void knightTours(std::string board[][5], int row, int col, int count, bool &solv
 
     if(!solved){
         board[row][col] = ".";
+        return;
     }
 }
 
