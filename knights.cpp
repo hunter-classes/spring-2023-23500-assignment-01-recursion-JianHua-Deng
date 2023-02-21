@@ -3,12 +3,12 @@
 
 void printboard(std::string board[][5]){
     /*
-    usleep(80000);
+    usleep(10000);
     std::cout << "\033[0;0H\033[2J";
     */
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            if(std::stoi(board[i][j]) > 9){
+            if(board[i][j] != "." && std::stoi(board[i][j]) > 9){
                 std::cout << " " << board[i][j] << "  |";
             }else{
                 std::cout << "  " << board[i][j] << "  |";
