@@ -9,9 +9,9 @@ void printboard(std::string board[][5]){
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
             if(std::stoi(board[i][j]) > 9){
-                std::cout << board[i][j] << " ";
+                std::cout << " " << board[i][j] << "  |";
             }else{
-                std::cout << " " << board[i][j] << " ";
+                std::cout << "  " << board[i][j] << "  |";
             }
         }
         std::cout << "\n";
